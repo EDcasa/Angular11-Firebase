@@ -1,0 +1,45 @@
+<div class="displayTable">
+  <div class="col-6 px-logo">
+    <a href="#" >
+      <img src="assets/logoHSC-transparent.png" alt="positronX.io - Learn Full Stack Development">
+    </a>
+  </div>
+  <div class="col-6 displayTableCell">
+    <div class="authBlock">
+      <h3>Iniciar Sesión</h3>
+      <div class="formGroup">
+        <input type="text" class="formControl" placeholder="Usuario" #userName required>
+      </div>
+
+      <div class="formGroup">
+        <input type="password" class="formControl" placeholder="Contraseña" #userPassword required>
+      </div>
+
+      <!-- Calling SignIn Api from AuthService -->
+      <div class="formGroup">
+        <input type="button" class="btn btnPrimary" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)">
+      </div>
+
+      <div class="formGroup">
+        <span class="or"><span class="orInner">O BIEN </span></span>
+      </div>
+
+      <!-- Calling GoogleAuth Api from AuthService -->
+      <div class="formGroup">
+        <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
+          <i class="fab fa-google-plus-g"></i>
+          INICIA SESIÓN CON GOOGLE
+        </button>
+      </div>
+
+      <div class="forgotPassword">
+        <span routerLink="/forgot-password">Olvidaste tu contraseña?</span>
+      </div>
+    </div>
+
+    <div class="redirectToLogin">
+      <span>No tienes una cuenta?<span class="redirect" routerLink="/register-user"> Registrate</span></span>
+    </div>
+
+  </div>
+</div>
