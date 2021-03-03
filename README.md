@@ -1,9 +1,9 @@
-# Angular7 Authentication with Firebase5
+# Angular11 Authentication with Firebase
 
-Learn to create full Firebase authentication system with Angular7 using AngularFire2 library.
+Learn to create full Firebase authentication system with Angular11 using AngularFire2 library.
 
 ## Written Article
-[Full Angular 7 Firebase Authentication System](https://www.positronx.io/full-angular-7-firebase-authentication-system)
+[Full Angular 11 Firebase Authentication System](https://homesoftcore.ec)
 
 
 - Sign in with Google
